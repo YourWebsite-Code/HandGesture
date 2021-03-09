@@ -34,11 +34,11 @@ function gotResult(error, results) {
         prediction_1 = results[0].label;
         prediction_2 = results[1].label;
         speak();
-        if (results[0].label == "Best") { document.getElementById("update_emoji").innerHTML = "&#128076;"; }
-        if (results[0].label == "Amazing") { document.getElementById("update_emoji").innerHTML = "&#128077;"; }
+        if (results[0].label == "Best") { document.getElementById("update_emoji").innerHTML = "&#128077;"; }
+        if (results[0].label == "Amazing") { document.getElementById("update_emoji").innerHTML = "&#128076;"; }
         if (results[0].label == "Victory") { document.getElementById("update_emoji").innerHTML = "&#9996;"; }
-        if (results[1].label == "Best") { document.getElementById("update_emoji2").innerHTML = "&#128076;"; }
-        if (results[1].label == "Amazing") { document.getElementById("update_emoji2").innerHTML = "&#128077;"; }
+        if (results[1].label == "Best") { document.getElementById("update_emoji2").innerHTML = "&#128077;"; }
+        if (results[1].label == "Amazing") { document.getElementById("update_emoji2").innerHTML = "&#128076;"; }
         if (results[1].label == "Victory") { document.getElementById("update_emoji2").innerHTML = "&#9996;"; }
     }
 }
